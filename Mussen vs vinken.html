@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mussen vs Vinken</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+</head>
+<body>
+<div class="container">
+    <h1>Mussen vs Vinken</h1>
+    <form action="waarneming.html" method="get">
+        <!-- Algemeen sectie -->
+        <fieldset>
+            <legend>Algemeen</legend>
+            <div class="row">
+                <div class="field">
+                    <label for="datum"><strong>Datum:</strong></label>
+                    <input type="date" id="datum" name="datum">
+                </div>
+                <div class="field">
+                    <label for="tijd"><strong>Tijd:</strong></label>
+                    <select id="tijd" name="tijd">
+                        <option value="0u-6u">0u - 6u</option>
+                        <option value="6u-12u">6u - 12u</option>
+                        <option value="12u-18u">12u - 18u</option>
+                        <option value="18u-24u">18u - 24u</option>
+                    </select>
+                </div>
+            </div>
+            <div class="radio-group">
+                <label><strong>Neerslag:</strong></label>
+                <input type="radio" id="geen" name="neerslag" value="geen" checked>
+                <label for="geen">geen</label>
+                <input type="radio" id="matig" name="neerslag" value="matig">
+                <label for="matig">matig</label>
+                <input type="radio" id="overvloedig" name="neerslag" value="overvloedig">
+                <label for="overvloedig">overvloedig</label>
+            </div>
+        </fieldset>
+
+        <!-- Vogels sectie -->
+        <fieldset>
+            <legend>Vogels</legend>
+            <div class="bird-row">
+                <img src="assets/images/mus.png" alt="Mus" class="bird-img">
+                <label for="mussen"><strong>#Mussen:</strong></label>
+                <input type="number" id="mussen" name="mussen" value="0" min="0" max="10" step="1">
+                <label for="zeker_mussen"><strong>zeker:</strong></label>
+                <input type="range" id="zeker_mussen" name="zeker_mussen" min="0" max="100" value="50">
+            </div>
+            <div class="bird-row">
+                <img src="assets/images/vink.png" alt="Vink" class="bird-img">
+                <label for="vinken"><strong>#Vinken:</strong></label>
+                <input type="number" id="vinken" name="vinken" value="0" min="0" max="10" step="1">
+                <label for="zeker_vinken"><strong>zeker:</strong></label>
+                <input type="range" id="zeker_vinken" name="zeker_vinken" min="0" max="100" value="50">
+            </div>
+        </fieldset>
+
+        <!-- Acties sectie -->
+        <fieldset>
+            <legend>Acties</legend>
+            <div class="button-container">
+                <button type="submit" class="action-button">registreer</button>
+                <button type="reset" class="action-button">maak leeg</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
