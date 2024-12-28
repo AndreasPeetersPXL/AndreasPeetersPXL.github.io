@@ -2,6 +2,9 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
     <title>Mussen vs Vinken</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/oef3.css">
@@ -46,18 +49,21 @@
                 <img src="assets/images/mus.png" alt="Mus" class="bird-img">
                 <label for="mussen"><strong>#Mussen:</strong></label>
                 <input type="number" id="mussen" name="mussen" value="0" min="0" max="10" step="1">
-                <label for="zeker_mussen"><strong>zeker:</strong></label>
-                <input type="range" id="zeker_mussen" name="zeker_mussen" min="0" max="100" value="50">
+                <div class="range-group">
+                    <label for="zeker_mussen"><strong>zeker:</strong></label>
+                    <input type="range" id="zeker_mussen" name="zeker_mussen" min="0" max="100" value="50">
+                </div>
             </div>
             <div class="bird-row">
                 <img src="assets/images/vink.png" alt="Vink" class="bird-img">
                 <label for="vinken"><strong>#Vinken:</strong></label>
                 <input type="number" id="vinken" name="vinken" value="0" min="0" max="10" step="1">
-                <label for="zeker_vinken"><strong>zeker:</strong></label>
-                <input type="range" id="zeker_vinken" name="zeker_vinken" min="0" max="100" value="50">
+                <div class="range-group">
+                    <label for="zeker_vinken"><strong>zeker:</strong></label>
+                    <input type="range" id="zeker_vinken" name="zeker_vinken" min="0" max="100" value="50">
+                </div>
             </div>
         </fieldset>
-
         <!-- Acties sectie -->
         <fieldset>
             <legend>Acties</legend>

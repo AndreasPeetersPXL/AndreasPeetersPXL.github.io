@@ -12,7 +12,6 @@ body {
     align-items: center;
     background-color: #f4f4f4;
 }
-
 form {
     width: 900px;
     margin-left: 200px;
@@ -22,19 +21,16 @@ form {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
     text-align: left; /* Centreer de titel */
     margin-left: 200px;
 }
-
 fieldset {
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 15px;
 }
-
 legend {
     font-weight: bold;
     padding: 0 10px;
@@ -42,14 +38,12 @@ legend {
     border-radius: 4px; /* Hoekjes afronden */
     background-color: #f9f9f9; /* Achtergrondkleur voor het kader */
 }
-
 /* Datum en Tijd op één lijn */
 label {
     display: inline-block;
     width: 80px;
     font-weight: bold;
 }
-
 input[type="date"], select {
     width: 150px;
     padding: 5px;
@@ -57,52 +51,58 @@ input[type="date"], select {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 input[type="radio"] {
     margin-left: 10px;
     margin-right: 5px;
 }
-
 /* Vogels sectie */
 .bird-row {
     display: flex;
     align-items: center;
-    gap: 15px;
     margin-bottom: 10px;
 }
-
 .bird-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border-radius: 60%;
     object-fit: cover;
     border: 2px solid #ccc;
+    margin-right: 10px;
 }
-
 .bird-row label {
     font-weight: bold;
 }
-
 .bird-row input[type="number"] {
     width: 50px;
     text-align: center;
-    padding: 3px;
     border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-.bird-row input[type="range"] {
-    width: 150px;
     margin-left: 10px;
 }
-
+.bird-row input[type="range"] {
+    width: 250px;
+}
+.bird-row label[for="zeker_mussen"],
+.bird-row label[for="zeker_vinken"] {
+    margin-left: 0;
+}
+.range-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.bird-row label[for="mussen"],
+.bird-row label[for="vinken"],
+.bird-row input[type="number"] {
+    margin-left: 10px; /* Verschuif het #Mussen label en inputvakje naar rechts */
+}
 /* Knoppen sectie */
 .button-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .action-button {
     background-color: #4267b2; /* Blauwe kleur */
     color: white; /* Witte tekst */
@@ -113,13 +113,10 @@ input[type="radio"] {
     width: 395px;
     cursor: pointer;
 }
-
 .action-button:hover {
     background-color: #365899; /* Donkerdere blauwe kleur bij hover */
 }
-
 .action-button:active {
     background-color: #29487d; /* Nog donkerder bij active */
 }
-
 
